@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Accordion pattern with details and name attribute</title>
+	<style>
+			body {
+					padding: 32px;
+					max-width: 360px;
+			}
+
+      details {
+          border: 1px solid #aaa;
+          border-radius: 4px;
+          padding: 0.5em 0.5em 0;
+      }
+
+      summary {
+          font-weight: bold;
+          margin: -0.5em -0.5em 0;
+          padding: 0.5em;
+      }
+
+      details[open] {
+          padding: 0.5em;
+      }
+
+      details[open] summary {
+          border-bottom: 1px solid #aaa;
+          margin-bottom: 0.5em;
+      }
+	</style>
+</head>
+<body style="padding: 32px">
+<header>
+  <h1>Accordion pattern with details and name attribute</h1>
+</header>
+<main>
+	<article>
+		<h2>
+			Without name attribute
+		</h2>
+		<details>
+			<summary>First</summary>
+			First paragraph
+		</details>
+		<details>
+			<summary>Second</summary>
+			Second paragraph
+		</details>
+		<details>
+			<summary>Third</summary>
+			Third paragraph
+		</details>
+	</article>
+	<article>
+		<h2>
+			With name="text" attribute, on every details element
+		</h2>
+		<details name="text">
+			<summary>First</summary>
+			First paragraph
+		</details>
+		<details name="text">
+			<summary>Second</summary>
+			Second paragraph
+		</details>
+		<details name="text">
+			<summary>Third</summary>
+			Third paragraph
+		</details>
+	</article>
+</main>
+</body>
+</html>
